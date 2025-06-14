@@ -39,3 +39,8 @@ bool Personnage::estVivant()
 {
     return m_vie > 0;
 }
+Personnage::Personnage():m_vie(100), m_mana(100), m_nomArme("Epée en bois"), m_degatsArme(10){}
+Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100),m_nomArme(nomArme), m_degatsArme(degatsArme)
+{
+ 
+}
