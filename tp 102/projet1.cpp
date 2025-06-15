@@ -10,7 +10,29 @@ private:
     double prix;
     static double tva;
 public:
-    Article(string ref,string des, double prix):reference(ref),designation(des),prix(prix){};
+    string getReference(){
+        return reference;
+    };
+    string getDesignation(){
+        return designation;
+    };
+    double getPrix(){
+        return prix;
+    };
+
+    void setReference(string ref){
+        reference = ref;
+    };
+    void setDesignation(string des){
+        designation = des;
+    };
+    void setPrix(double prix){
+        this->prix = prix;
+    };
+    Article():reference("N/A"),designation("N/A"),prix(0.0){};
+    Article(string ref,string des,double prix){
+        
+    }
     void calculerPrixTTC(){
         double prixTTC = prix + (prix * tva / 100);
         
