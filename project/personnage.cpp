@@ -12,13 +12,13 @@ void Personnage::recevoirDegats(int nbDegats)
         m_vie = 0; //On met la vie à 0 (cela veut dire mort)
     }
 }
-/*
+
 void Personnage::attaquer(Personnage &cible)
 {
     cible.recevoirDegats(m_arme.getDegats());
     //On inflige à la cible les dégâts que cause notre arme
 }
-*/
+
 void Personnage::boirePotionDeVie(int quantitePotion)
 {
     m_vie += quantitePotion;

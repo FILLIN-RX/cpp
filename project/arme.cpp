@@ -21,3 +21,7 @@ void Arme::afficher() const
     cout << "Arme: " << m_nom << ", Dégâts: " << m_degats << endl;
     // Affiche le nom et les dégâts de l'arme
 }
+int Arme::getDegats() const
+{
+    return m_degats;
+}
