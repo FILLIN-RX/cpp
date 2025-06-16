@@ -11,7 +11,7 @@ private:
     string DOB;
 public:
     Personne(string n, string p,string  d):nom(n),prenom(p),DOB(d){};
-    void afficher(){
+   virtual void afficher(){
         cout << "Nom:" << nom << endl;
         cout << "prenom:" << prenom << endl;
         cout << "age :" << DOB <<   endl;
