@@ -54,7 +54,7 @@ public:
     Directeur(string n,string p, string d,int s ,string service, string societer):Chef(n,p,d,s,service), Societer(societer){};
     void afficher(){
     
-        Employer::afficher();
+        Chef::afficher();
         cout << "Societer:" << Societer << endl ;
     };
 };

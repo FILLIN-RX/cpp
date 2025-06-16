@@ -37,12 +37,10 @@ public:
     };
     Article():reference("N/A"),designation("N/A"),prix(0.0){};
     Article(string ref,string des,double prix):reference(ref),designation(des),prix(prix){
-        // Constructeur avec paramètres
-        // Initialise l'article avec une référence, une désignation et un prix spécifiques
+        
     }
     Article(string ref,string des):reference(ref),designation(des),prix(0.0){
-        // Constructeur avec paramètres
-        // Initialise l'article avec une référence, une désignation et un prix spécifiques
+        
         
     }
     Article(const Article& autre)
@@ -62,7 +60,7 @@ public:
         cout << "Prix TTC de l'article : " << calculerPrixTTC() << "fcfa" << endl;
     }
 };
-double Article::tva = 18.0; // ou la valeur que vous souhaitez
+double Article::tva = 18.0; 
 int main(){
     Article a1("A001", "Article 1", 100.0);
     Article a2("A002", "Article 2");
@@ -75,7 +73,7 @@ int main(){
     a2.afficher();
     a2.setPrix(200.0);
     a2.afficher();
-    Article a3 = a1; // Utilisation du constructeur de copie
+    Article a3 = a1; 
     cout << "Détails de l'article copié :" << endl;
     a3.afficher();
     return 0;
