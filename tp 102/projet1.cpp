@@ -78,4 +78,3 @@ int main(){
     a3.afficher();
     return 0;
 }
-
